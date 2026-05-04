@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- script: ls -R
+  displayName: "Show files"
+  
 - task: Maven@3
   inputs:
     mavenPomFile: 'prg10/pom.xml'
